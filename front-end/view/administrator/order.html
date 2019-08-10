@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/custom/order.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+
+    <!-- Fonts External -->
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="icon" href="../../assets/img/icon.png">
+    <script src="https://kit.fontawesome.com/7a87ef3e19.js"></script>
+
+    <title>Order Page | RestoServe</title>
+</head>
+
+<body>
+
+    <div class="container-fluid pl-0">
+        <div class="sidebar bg-salmon shadow">
+            <div class="row">
+                <a href="../../index.html" class="d-inline-block mx-auto mt-2">
+                    <img src="../../assets/img/logo-admin.png" width="60" alt="">
+                </a>
+            </div>
+            <div class="row mt-5">
+                <a href="menu.html" class="d-inline-block mx-auto mt-3">
+                    <img src="../../assets/img/menu-bar.png" width="45" alt="">
+                </a>
+            </div>
+            <div class="row mt-3">
+                <a href="order.html" class="d-inline-block mx-auto mt-4">
+                    <img src="../../assets/img/order-bar.png" width="49" alt="">
+                </a>
+            </div>
+            <div class="row mt-3">
+                <a href="transaksi.html" class="d-inline-block mx-auto mt-4">
+                    <img src="../../assets/img/transaction-bar.png" width="52" alt="">
+                </a>
+            </div>
+            <div class="row mt-3">
+                <a href="" class="d-inline-block mx-auto mt-4 pt-1">
+                    <img src="../../assets/img/report-bar.png" width="55" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-menu pt-3">
+        <div class="row mx-auto">
+            <div class="top-bar w-100 bg-white mb-3 mr-3">
+                <h1 class="fas fa-pizza-slice ml-4"></h1>
+                <h3 class="font-default mt-3 pt-1 ml-2 d-inline-block font-weight-bold">Order Tab</h3>
+                <form action="" method="get" class="d-inline-block cari mr-4">
+                    <input type="text" name="cari" id="cari" placeholder="Find Menu...">
+                    <button class="btn bg-salmon text-white"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="row mx-auto mt-2">
+            <button
+                class="bg-white font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-dark">LIST
+                ORDER</button>
+            <button
+                class="bg-white font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-dark">CREATE
+                ORDER</button>
+        </div>
+        <div class="row mt-4 ml-1 mr-3">
+            <table class="table font-default rounded text-center">
+                <thead class="bg-salmon text-white">
+                    <tr>
+                        <th scope="col">Nama Pelanggan</th>
+                        <th scope="col">No Meja</th>
+                        <th scope="col">Waktu Order</th>
+                        <th scope="col">Keterangan</th>
+                        <th scope="col">Status Bayar</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wahid Hasyim</td>
+                        <td>07B</td>
+                        <td>10:09:07 WIB</td>
+                        <td>-</td>
+                        <td><span class="badge badge-success">Sudah Dibayar</span></td>
+                        <td>
+                            <button class="btn btn-sm btn-primary shadow" data-toggle="modal"
+                                data-target="#exampleModalEdit"><i class="fas fa-pen"></i></button>
+                            <button class="btn btn-sm btn-light shadow" data-toggle="modal"
+                                data-target="#exampleModalMenu"><i class="fas fa-info-circle"></i></button>
+                            <button class="btn btn-sm btn-danger shadow btn-delete"><i class="fas fa-trash"></i></button>
+                        </td>
+                        <div class="modal fade" id="exampleModalMenu" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title font-default" id="exampleModalLabel">Detail Menu</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row mx-auto">
+                                            <div class="col-md-3">
+                                                <img src="../../assets/img/pizza-buah.png" width="80" class="border-salmon" alt="">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="../../assets/img/pizza-buah.png" width="80" class="border-salmon" alt="">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="../../assets/img/pizza-buah.png" width="80" class="border-salmon" alt="">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="../../assets/img/pizza-buah.png" width="80" class="border-salmon" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="container pt-4 pb-4">
+                                            <h5 class="font-default font-weight-bold d-inline">Nama
+                                                Pelanggan</h5>
+                                            <p class="font-default">Wahid Hasyim</p>
+                                            <h5 class="font-default font-weight-bold d-inline">No Meja</h5>
+                                            <p class="font-default">07B</p>
+                                            <h5 class="font-default font-weight-bold d-inline">Waktu Order</h5>
+                                            <p class="font-default">10:08:10 WIB</p>
+                                            <h5 class="font-default font-weight-bold d-inline">Keterangan</h5>
+                                            <p class="font-default">-</p>
+                                            <h5 class="font-default font-weight-bold d-inline">Status Bayar</h5><br>
+                                            <span class="badge badge-success font-default">Sudah Dibayar</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-default" id="exampleModalLabel">Edit New Menu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="Kategori" class="font-default">Nama Kategori</label><br>
+                            <select name="kategori" id="kategori" class="w-100">
+                                <option value="">--- Select Category ----</option>
+                                <option value="">Pizza</option>
+                                <option value="">Pasta</option>
+                                <option value="">Dessert</option>
+                                <option value="">Chicken</option>
+                                <option value="">Drink</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Nama" class="font-default">Nama Menu</label><br>
+                            <input type="text" name="nama" id="nama" class="w-100" placeholder="Masukan Nama Menu">
+                        </div>
+                        <div class="form-group">
+                            <label for="Harga" class="font-default">Harga Menu</label><br>
+                            <input type="text" name="harga" id="harga" class="w-100" placeholder="Masukan Harga Menu">
+                        </div>
+                        <div class="form-group">
+                            <label for="Status" class="font-default">Status Menu</label><br>
+                            <select name="status" id="status" class="w-100">
+                                <option value="">--- Select Status ----</option>
+                                <option value="">Tersedia</option>
+                                <option value="">Tidak tersedia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Deskripsi" class="font-default">Deskripsi Menu</label><br>
+                            <textarea name="Deskripsi" id="Deskripsi" class="w-100" cols="50"
+                                placeholder="Deskripsikan Menu"></textarea>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input font-default" id="validatedCustomFile" required>
+                            <label class="custom-file-label" for="validatedCustomFile">Choose Menu
+                                Picture</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary font-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-salmon text-white font-default">Save Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/custom/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <script>
+        document.querySelector(".btn-delete").addEventListener('click', function(e){
+            e.preventDefault();
+            swal({
+                title: "Are You Sure?",
+                type: "info",
+                showCancelButton: true,
+                confirmButtonText: "Delete It",
+                confirmButtonColor: "#ff4242",
+                cancelButtonColor: "#999999",
+                reverseButtons: true,
+                focusConfirm: false,
+                focusCancel: true
+            });
+        });
+    </script>
+
+</body>
+
+</html>
