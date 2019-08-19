@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
-    <link rel="stylesheet" href="../../assets/custom/order.css">
+    <link rel="stylesheet" href="../../assets/custom/laporan.css">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
 
     <!-- Fonts External -->
@@ -20,7 +20,7 @@
     <link rel="icon" href="../../assets/img/icon.png">
     <script src="https://kit.fontawesome.com/7a87ef3e19.js"></script>
 
-    <title>Menu Page | RestoServe</title>
+    <title>Report Page | RestoServe</title>
 </head>
 
 <body>
@@ -57,8 +57,8 @@
     <div class="container-menu pt-3">
         <div class="row mx-auto">
             <div class="top-bar w-100 bg-white mb-3 mr-3">
-                <h1 class="fas fa-pizza-slice ml-4"></h1>
-                <h3 class="font-default mt-3 pt-1 ml-2 d-inline-block font-weight-bold">Transaksi Tab</h3>
+                <h1 class="fas fa-chart-bar ml-4"></h1>
+                <h3 class="font-default mt-3 pt-1 ml-2 d-inline-block font-weight-bold">Laporan Tab</h3>
                 <form action="" method="get" class="d-inline-block cari mr-4">
                     <input type="text" name="cari" id="cari" placeholder="Find Menu...">
                     <button class="btn bg-salmon text-white"><i class="fas fa-search"></i></button>
@@ -66,14 +66,29 @@
             </div>
         </div>
         <div class="row mx-auto mt-2">
-            <button
-                class="bg-white font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-dark">LIST
-                ORDER</button>
-            <a href="transaksi.html">
+            <div class="col-xl-4">
                 <button
-                    class="bg-white font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-dark">LIST
-                    TRANSAKSI</button>
-            </a>
+                    class="bg-white font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-dark">REPORT
+                    ORDER</button>
+                <a href="transaksi.html">
+                    <button
+                        class="bg-white font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-dark">REPORT
+                        MENU</button>
+                </a>
+            </div>
+            <div class="col-xl-4">
+
+            </div>
+            <div class="col-xl-4">
+                <button
+                    class="bg-danger font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-white">EXPORT
+                    PDF <i class="fas fa-file-pdf"></i></button>
+                <a href="transaksi.html">
+                    <button
+                        class="bg-success font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-white">EXPORT
+                        EXCEL <i class="fas fa-file-excel"></i></button>
+                </a>
+            </div>
         </div>
         <div class="row mt-4 ml-1 mr-3">
             <div class="table-responsive">
@@ -83,9 +98,8 @@
                             <th scope="col">Nama Pelanggan</th>
                             <th scope="col">No Meja</th>
                             <th scope="col">Waktu Order</th>
-                            <th scope="col">Keterangan</th>
-                            <th scope="col">Status Transaksi</th>
-                            <th scope="col">Aksi</th>
+                            <th scope="col">Menu</th>
+                            <th scope="col">Terbayar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -93,90 +107,21 @@
                             <td>Wahid Hasyim</td>
                             <td>07B</td>
                             <td>10:09:07 WIB</td>
-                            <td>-</td>
-                            <td><span class="badge badge-warning">Belum Dibayar</span></td>
                             <td>
-                                <button class="btn btn-sm btn-light shadow" data-toggle="modal"
-                                    data-target="#exampleModalMenu">INSERT TRANSAKSI</button>
+                                <img src="../../assets/img/pizza-buah.png" width="35" alt="">
+                                <img src="../../assets/img/pizza-buah.png" width="35" alt="">
+                                <img src="../../assets/img/pizza-buah.png" width="35" alt="">
                             </td>
-                            <div class="modal fade" id="exampleModalMenu" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title font-default" id="exampleModalLabel">Insert Transaksi
-                                            </h5>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row mx-auto">
-                                                <div class="col-md-3">
-                                                    <img src="../../assets/img/pizza-buah.png" width="80"
-                                                        class="border-salmon" alt="">
-                                                </div>
-                                                <div class="col-md-5 d-flex align-items-center">
-                                                    <h5 class="font-default">Splitza Classic</h5>
-                                                </div>
-                                                <div class="col-md-1 d-flex align-items-center justify-content-center">
-                                                    <h5 class="font-default">2x</h5>
-                                                </div>
-                                                <div class="col-md-3 d-flex align-items-center text-right">
-                                                    <h5 class="font-default font-weight-bold">150.900</h5>
-                                                </div>
-                                            </div>
-                                            <div class="row mx-auto mt-1">
-                                                <div class="col-md-3">
-                                                    <img src="../../assets/img/pizza-buah.png" width="80"
-                                                        class="border-salmon" alt="">
-                                                </div>
-                                                <div class="col-md-5 d-flex align-items-center">
-                                                    <h5 class="font-default">Splitza Classic</h5>
-                                                </div>
-                                                <div class="col-md-1 d-flex align-items-center justify-content-center">
-                                                    <h5 class="font-default">1x</h5>
-                                                </div>
-                                                <div class="col-md-3 d-flex align-items-center text-right">
-                                                    <h5 class="font-default font-weight-bold">150.900</h5>
-                                                </div>
-                                            </div>
-                                            <div class="row mx-auto mt-5">
-                                                <div class="col-md-12">
-                                                    <h4 class="font-default text-center">Total Pembayaran</h4>
-                                                    <h2 class="font-default text-center font-weight-bold">Rp. 301.900
-                                                    </h2>
-                                                </div>
-                                            </div>
-                                            <div class="row mx-auto mt-5 mb-4">
-                                                <form action="" method="POST">
-                                                    <input type="text" style="height: 45px;
-                                                            color: #494949;
-                                                            padding-left: 10px;
-                                                            background: rgba(101, 101, 101, 0.24);
-                                                            border: 2px solid #494949;
-                                                            box-sizing: border-box;
-                                                            border-radius: 6px;
-                                                            font-family: 'Montserrat', sans-serif;" name=""
-                                                        class="w-100 mr-3 ml-3" placeholder="Masukan Uang Dibayar">
-                                                    <button type="submit"
-                                                        class="btn bg-salmon mr-3 ml-3 btn-block font-default text-white mt-3">SUBMIT</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <td>Rp. 175.000</td>
                         </tr>
                         <tr>
                             <td>Wahid Hasyim</td>
                             <td>07B</td>
                             <td>10:09:07 WIB</td>
-                            <td>-</td>
-                            <td><span class="badge badge-warning">Belum Dibayar</span></td>
                             <td>
-                                <button class="btn btn-sm btn-primary shadow" data-toggle="modal"
-                                    data-target="#exampleModalEdit"><i class="fas fa-pen"></i></button>
-                                <button class="btn btn-sm btn-primary shadow" data-toggle="modal"
-                                    data-target="#exampleModalDetail"><i class="fas fa-info-circle"></i></button>
+                                <img src="../../assets/img/pizza-buah.png" width="35" alt="">
                             </td>
+                            <td>Rp. 150.000</td>
                         </tr>
                     </tbody>
                 </table>

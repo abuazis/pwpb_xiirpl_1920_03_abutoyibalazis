@@ -9,7 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../../assets/custom/menu.css">
-    <link rel='stylesheet' href='../../assets/https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <link rel='stylesheet'
+        href='../../assets/https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
 
     <!-- Fonts External -->
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap" rel="stylesheet">
@@ -48,7 +49,7 @@
                 </a>
             </div>
             <div class="row mt-3">
-                <a href="" class="d-inline-block mx-auto mt-4 pt-1">
+                <a href="laporan.html" class="d-inline-block mx-auto mt-4 pt-1">
                     <img src="../../assets/img/report-bar.png" width="55" alt="">
                 </a>
             </div>
@@ -119,8 +120,8 @@
                                                 </button>
                                             </div>
                                             <div class="col-md-5">
-                                                <button class="btn btn-light border-dark btn-block font-default ubah" data-toggle="modal"
-                                                data-target="#exampleModalEdit">
+                                                <button class="btn btn-light border-dark btn-block font-default ubah"
+                                                    data-toggle="modal" data-target="#exampleModalEdit">
                                                     Edit
                                                 </button>
                                             </div>
@@ -189,7 +190,7 @@
         <div class="row mx-auto mb-5 d-flex ">
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title font-default" id="exampleModalLabel">Insert New Menu</h5>
@@ -198,48 +199,70 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="" method="post">
-                                <div class="form-group">
-                                    <label for="Kategori" class="font-default">Nama Kategori</label><br>
-                                    <select name="kategori" id="kategori" class="w-100">
-                                        <option value="">--- Select Category ----</option>
-                                        <option value="">Pizza</option>
-                                        <option value="">Pasta</option>
-                                        <option value="">Dessert</option>
-                                        <option value="">Chicken</option>
-                                        <option value="">Drink</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Nama" class="font-default">Nama Menu</label><br>
-                                    <input type="text" name="nama" id="nama" class="w-100"
-                                        placeholder="Masukan Nama Menu">
-                                </div>
-                                <div class="form-group">
-                                    <label for="Harga" class="font-default">Harga Menu</label><br>
-                                    <input type="text" name="harga" id="harga" class="w-100"
-                                        placeholder="Masukan Harga Menu">
-                                </div>
-                                <div class="form-group">
-                                    <label for="Status" class="font-default">Status Menu</label><br>
-                                    <select name="status" id="status" class="w-100">
-                                        <option value="">--- Select Status ----</option>
-                                        <option value="">Tersedia</option>
-                                        <option value="">Tidak tersedia</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Deskripsi" class="font-default">Deskripsi Menu</label><br>
-                                    <textarea name="Deskripsi" id="Deskripsi" class="w-100" cols="50"
-                                        placeholder="Deskripsikan Menu"></textarea>
-                                </div>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input font-default" id="validatedCustomFile"
-                                        required>
-                                    <label class="custom-file-label" for="validatedCustomFile">Choose Menu
-                                        Picture</label>
-                                </div>
-                            </form>
+                            <div class="container-fluid">
+                                <form action="" method="post">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="Kategori" class="font-default">Nama Kategori</label><br>
+                                                <select name="kategori" id="kategori" class="w-100">
+                                                    <option value="">--- Select Category ----</option>
+                                                    <option value="">Pizza</option>
+                                                    <option value="">Pasta</option>
+                                                    <option value="">Dessert</option>
+                                                    <option value="">Chicken</option>
+                                                    <option value="">Drink</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="Status" class="font-default">Status Menu</label><br>
+                                                <select name="status" id="status" class="w-100">
+                                                    <option value="">--- Select Status ----</option>
+                                                    <option value="">Tersedia</option>
+                                                    <option value="">Tidak tersedia</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="Nama" class="font-default">Nama Menu</label><br>
+                                                <input type="text" name="nama" id="nama" class="w-100"
+                                                    placeholder="Masukan Nama Menu">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="Harga" class="font-default">Harga Menu</label><br>
+                                                <input type="text" name="harga" id="harga" class="w-100"
+                                                    placeholder="Masukan Harga Menu">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="Deskripsi" class="font-default">Deskripsi Menu</label><br>
+                                                <textarea name="Deskripsi" id="Deskripsi" class="w-100" cols="50"
+                                                    placeholder="Deskripsikan Menu"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input font-default"
+                                                    id="validatedCustomFile" required>
+                                                <label class="custom-file-label" for="validatedCustomFile">Choose Menu
+                                                    Picture</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary font-default"
@@ -249,9 +272,9 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="exampleModalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
+            <div class="modal fade" id="exampleModalEdit" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title font-default" id="exampleModalLabel">Edit New Menu</h5>
@@ -260,48 +283,70 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="" method="post">
-                                <div class="form-group">
-                                    <label for="Kategori" class="font-default">Nama Kategori</label><br>
-                                    <select name="kategori" id="kategori" class="w-100">
-                                        <option value="">--- Select Category ----</option>
-                                        <option value="">Pizza</option>
-                                        <option value="">Pasta</option>
-                                        <option value="">Dessert</option>
-                                        <option value="">Chicken</option>
-                                        <option value="">Drink</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Nama" class="font-default">Nama Menu</label><br>
-                                    <input type="text" name="nama" id="nama" class="w-100"
-                                        placeholder="Masukan Nama Menu">
-                                </div>
-                                <div class="form-group">
-                                    <label for="Harga" class="font-default">Harga Menu</label><br>
-                                    <input type="text" name="harga" id="harga" class="w-100"
-                                        placeholder="Masukan Harga Menu">
-                                </div>
-                                <div class="form-group">
-                                    <label for="Status" class="font-default">Status Menu</label><br>
-                                    <select name="status" id="status" class="w-100">
-                                        <option value="">--- Select Status ----</option>
-                                        <option value="">Tersedia</option>
-                                        <option value="">Tidak tersedia</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Deskripsi" class="font-default">Deskripsi Menu</label><br>
-                                    <textarea name="Deskripsi" id="Deskripsi" class="w-100" cols="50"
-                                        placeholder="Deskripsikan Menu"></textarea>
-                                </div>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input font-default" id="validatedCustomFile"
-                                        required>
-                                    <label class="custom-file-label" for="validatedCustomFile">Choose Menu
-                                        Picture</label>
-                                </div>
-                            </form>
+                            <div class="container-fluid">
+                                <form action="" method="post">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="Kategori" class="font-default">Nama Kategori</label><br>
+                                                <select name="kategori" id="kategori" class="w-100">
+                                                    <option value="">--- Select Category ----</option>
+                                                    <option value="">Pizza</option>
+                                                    <option value="">Pasta</option>
+                                                    <option value="">Dessert</option>
+                                                    <option value="">Chicken</option>
+                                                    <option value="">Drink</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="Status" class="font-default">Status Menu</label><br>
+                                                <select name="status" id="status" class="w-100">
+                                                    <option value="">--- Select Status ----</option>
+                                                    <option value="">Tersedia</option>
+                                                    <option value="">Tidak tersedia</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="Nama" class="font-default">Nama Menu</label><br>
+                                                <input type="text" name="nama" id="nama" class="w-100"
+                                                    placeholder="Masukan Nama Menu">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="Harga" class="font-default">Harga Menu</label><br>
+                                                <input type="text" name="harga" id="harga" class="w-100"
+                                                    placeholder="Masukan Harga Menu">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="Deskripsi" class="font-default">Deskripsi Menu</label><br>
+                                                <textarea name="Deskripsi" id="Deskripsi" class="w-100" cols="50"
+                                                    placeholder="Deskripsikan Menu"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input font-default"
+                                                    id="validatedCustomFile" required>
+                                                <label class="custom-file-label" for="validatedCustomFile">Choose Menu
+                                                    Picture</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary font-default"
@@ -332,9 +377,9 @@
             </div>
             <div class="col-md-6">
                 <button class="btn btn-danger btn-lg font-default ml-3 float-right" data-toggle="modal"
-                data-target="#exampleModal">
-                New Menu +
-            </button>
+                    data-target="#exampleModal">
+                    New Menu +
+                </button>
             </div>
         </div>
     </div>
@@ -348,11 +393,11 @@
     <script src="../../assets/custom/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
     <script>
-        $('.ubah').click(function() {
+        $('.ubah').click(function () {
             $('#exampleModalMenu').modal('hide');
         });
 
-        document.querySelector(".btn-hapus").addEventListener('click', function(e){
+        document.querySelector(".btn-hapus").addEventListener('click', function (e) {
             e.preventDefault();
             swal({
                 title: "Are You Sure?",
@@ -367,7 +412,7 @@
             });
         });
     </script>
-    
+
 
 </body>
 
