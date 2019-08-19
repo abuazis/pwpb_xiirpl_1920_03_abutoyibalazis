@@ -123,3 +123,40 @@ form textarea {
     border: 4px solid #FF4242;
     border-radius: 7px;
 }
+@media (max-width: 455px) {
+    .top-bar {
+        height: 170px !important;
+    }
+    .cari {
+        width: 100%;
+        margin: 0 !important;
+    }
+    .cari input {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .cari button {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-bar {
+        height: 140px;
+    }
+}
+
+@media (max-width: 659px) {
+    .top-bar {
+        height: 140px;
+    }
+}
+
+@media (max-width: 360px) {
+    .fa-pizza-slice {
+        display: none !important;
+    }
+}

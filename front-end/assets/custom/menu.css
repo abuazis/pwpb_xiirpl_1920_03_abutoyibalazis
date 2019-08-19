@@ -50,6 +50,17 @@ body {
     border-radius: 7px;
 }
 
+.tab-order {
+    border-radius: 3px;
+    height: 170px;
+    border: 4px solid #FF4242;
+    border-radius: 7px;
+}
+
+.select-menu {
+    height: 530px !important;
+}
+
 .tab h1 {
     font-size: 19pt;
 }
@@ -89,14 +100,6 @@ body {
     border-radius: 7px;
 }
 
-.pagination {
-    margin-left: 500%;
-}
-
-.pagination li a {
-    color: #FF4242 !important;
-}
-
 form input,
 form select,
 form textarea {
@@ -122,4 +125,96 @@ form textarea {
 .border-salmon {
     border: 4px solid #FF4242;
     border-radius: 7px;
+}
+
+@media (max-width: 455px) {
+    .top-bar {
+        height: 170px !important;
+    }
+    .cari {
+        width: 100%;
+        margin: 0 !important;
+    }
+    .cari input {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .cari button {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-bar {
+        height: 140px;
+    }
+}
+
+@media (max-width: 659px) {
+    .top-bar {
+        height: 140px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal h1 {
+        text-align: center !important;
+    }
+    .modal p {
+        text-align: center !important;
+    }
+    .modal button {
+        margin-bottom: 10px;
+    }
+    .tab {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .harga-menu, .judul-menu {
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .tab {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .harga-menu, .judul-menu {
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .border-salmon {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .tab-last {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .border-salmon {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 360px) {
+    .fa-hamburger {
+        display: none !important;
+    }
 }
