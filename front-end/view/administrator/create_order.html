@@ -21,7 +21,7 @@
     <link rel="icon" href="../../assets/img/icon.png">
     <script src="https://kit.fontawesome.com/7a87ef3e19.js"></script>
 
-    <title>Menu Page | RestoServe</title>
+    <title>Order Page | RestoServe</title>
 </head>
 
 <body>
@@ -58,8 +58,8 @@
     <div class="container-menu pt-3">
         <div class="row mx-auto">
             <div class="top-bar w-100 bg-white mb-3 mr-3">
-                <h1 class="fas fa-hamburger ml-4"></h1>
-                <h3 class="font-default mt-3 pt-1 ml-2 d-inline-block font-weight-bold">Menu Tab</h3>
+                <h1 class="fas fa-pizza-slice ml-4"></h1>
+                <h3 class="font-default mt-3 pt-1 ml-2 d-inline-block font-weight-bold">Order Tab</h3>
                 <form action="" method="get" class="d-inline-block cari mr-4">
                     <input type="text" name="cari" id="cari" placeholder="Find Menu...">
                     <button class="btn bg-salmon text-white"><i class="fas fa-search"></i></button>
@@ -177,22 +177,24 @@
                         <div class="container-form bg-white w-100 ml-3 mt-3 mr-3 rounded p-4 shadow">
                             <form action="" method="post">
                                 <div class="form-group">
-                                    <label for="Nama" class="font-default">Nama Menu</label><br>
+                                    <label for="Nama" class="font-default">Nama Pelanggan</label><br>
                                     <input type="text" name="nama" id="nama" class="w-100"
                                         placeholder="Masukan Nama Menu">
                                 </div>
                                 <div class="form-group">
                                     <label for="Status" class="font-default">Status Menu</label><br>
                                     <select name="status" id="status" class="w-100">
-                                        <option value="">--- Select Status ----</option>
-                                        <option value="">Tersedia</option>
-                                        <option value="">Tidak tersedia</option>
+                                        <option value="">--- No Meja ----</option>
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="Deskripsi" class="font-default">Deskripsi Menu</label><br>
+                                    <label for="Deskripsi" class="font-default">Keterangan Order</label><br>
                                     <textarea name="Deskripsi" id="Deskripsi" class="w-100" cols="50"
-                                        placeholder="Deskripsikan Menu"></textarea>
+                                        placeholder="Masukan Keterangan Order"></textarea>
                                 </div>
                                 <button type="button" class="btn btn-block bg-salmon text-white font-default">Save
                                     Menu</button>

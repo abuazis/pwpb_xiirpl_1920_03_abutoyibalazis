@@ -50,3 +50,8 @@ body {
 .tab h1 {
     font-size: 19pt;
 }
+.tab img:hover {
+    border: 6px solid #ff4242;
+    border-radius: 100%;
+    transition: 1s;
+}
