@@ -55,7 +55,7 @@
     </div>
     <div class="container-menu pt-3">
         <div class="row mx-auto">
-            <div class="top-bar w-100 bg-white mb-3 mr-3">
+            <div class="top-bar w-100 bg-white mb-3 mr-3 ml-3">
                 <h1 class="fas fa-chart-bar ml-4"></h1>
                 <h3 class="font-default mt-3 pt-1 ml-2 d-inline-block font-weight-bold">Laporan Tab</h3>
                 <form action="" method="get" class="d-inline-block cari mr-4">
@@ -65,68 +65,39 @@
             </div>
         </div>
         <div class="row mx-auto mt-2">
-            <div class="col-xl-4">
+            <div class="col-sm-6">
                 <button
-                    class="bg-white font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-dark">REPORT
-                    ORDER</button>
-                <a href="transaksi.html">
-                    <button
-                        class="bg-white font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-dark">REPORT
-                        MENU</button>
-                </a>
+                    class="w-100 btn-lg bg-success font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded text-white mb-3">EXPORT
+                    EXCEL <i class="fas fa-file-excel"></i></button>
             </div>
-            <div class="col-xl-4">
-
-            </div>
-            <div class="col-xl-4">
+            <div class="col-sm-6">
                 <button
-                    class="bg-danger font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-white">EXPORT
+                    class="w-100 btn-lg bg-danger font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded text-white mb-3">EXPORT
                     PDF <i class="fas fa-file-pdf"></i></button>
-                <a href="transaksi.html">
-                    <button
-                        class="bg-success font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-white">EXPORT
-                        EXCEL <i class="fas fa-file-excel"></i></button>
-                </a>
             </div>
         </div>
-        <div class="row mt-4 ml-1 mr-3">
-            <div class="table-responsive">
-                <table class="table font-default rounded text-center">
-                    <thead class="bg-salmon text-white">
-                        <tr>
-                            <th scope="col">Nama Pelanggan</th>
-                            <th scope="col">No Meja</th>
-                            <th scope="col">Waktu Order</th>
-                            <th scope="col">Menu</th>
-                            <th scope="col">Terbayar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Wahid Hasyim</td>
-                            <td>07B</td>
-                            <td>10:09:07 WIB</td>
-                            <td>
-                                <img src="../../assets/img/pizza-buah.png" width="35" alt="">
-                                <img src="../../assets/img/pizza-buah.png" width="35" alt="">
-                                <img src="../../assets/img/pizza-buah.png" width="35" alt="">
-                            </td>
-                            <td>Rp. 175.000</td>
-                        </tr>
-                        <tr>
-                            <td>Wahid Hasyim</td>
-                            <td>07B</td>
-                            <td>10:09:07 WIB</td>
-                            <td>
-                                <img src="../../assets/img/pizza-buah.png" width="35" alt="">
-                            </td>
-                            <td>Rp. 150.000</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="row mt-4 ml-1 mr-2">
+            <div class="col-md-6 mb-3">
+                <div class="w-100 bg-white rounded p-3">
+                    <h4 class="font-default font-weight-bold">Monthly Order</h4>
+                    <canvas id="laporanOrder"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="w-100 bg-white rounded p-3">
+                    <h4 class="font-default font-weight-bold">Most Ordered Menu</h4>
+                    <canvas id="laporanMenu"></canvas>
+                </div>
             </div>
         </div>
-
+        <div class="row mt-4 ml-1 mr-3 mb-5">
+            <div class="col-12">
+                <div class="w-100 bg-white rounded p-3">
+                    <h4 class="font-default font-weight-bold">Track Record</h4>
+                    <canvas id="laporanHarian"></canvas>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
 
@@ -138,7 +109,11 @@
     <script src="../../assets/custom/script.js"></script>
     <script src="../../node_modules/chart.js/dist/Chart.js"></script>
     <script src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="../../assets/custom/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>
