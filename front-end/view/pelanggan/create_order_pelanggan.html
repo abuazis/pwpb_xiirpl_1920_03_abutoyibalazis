@@ -29,31 +29,21 @@
     <div class="container-fluid pl-0">
         <div class="sidebar bg-salmon shadow">
             <div class="row">
-                <a href=",../../index.html" class="d-inline-block mx-auto mt-2">
+                <a href="../../index.html" class="d-inline-block mx-auto mt-2">
                     <img src="../../assets/img/logo-admin.png" width="60" alt="">
                 </a>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-5 pt-5">
                 <a href="menu.html" class="d-inline-block mx-auto mt-3">
                     <img src="../../assets/img/menu-bar.png" width="45" alt="">
                 </a>
             </div>
             <div class="row mt-3">
-                <a href="order.html" class="d-inline-block mx-auto mt-4">
+                <a href="create_order_pelanggan.html" class="d-inline-block mx-auto mt-4">
                     <img src="../../assets/img/order-bar.png" width="49" alt="">
                 </a>
             </div>
-            <div class="row mt-3">
-                <a href="transaksi.html" class="d-inline-block mx-auto mt-4">
-                    <img src="../../assets/img/transaction-bar.png" width="52" alt="">
-                </a>
-            </div>
-            <div class="row mt-3">
-                <a href="laporan.html" class="d-inline-block mx-auto mt-4 pt-1">
-                    <img src="../../assets/img/report-bar.png" width="55" alt="">
-                </a>
-            </div>
-            <div class="row mt-5 pt-3">
+            <div class="row mt-4">
                 <a href="laporan.html" class="d-inline-block mx-auto mt-4 pt-1 text-decoration-none">
                     <i class="fas fa-sign-out-alt fa-2x text-white text-center d-inline-block ml-2"></i><br>
                     <span class="font-default text-white" style="font-size: 10px;">LOGOUT</span>
@@ -73,9 +63,9 @@
             </div>
         </div>
         <div class="row mx-auto d-inline-block d-flex">
-            <div class="col-xl-12 pl-0">
+            <div class="col-xl-12">
                 <div class="row mx-auto">
-                    <div class="category-bar w-100 bg-white mb-3 rounded shadow">
+                    <div class="category-bar w-100 bg-white mb-3 mr-3 rounded shadow">
                         <ul class="nav justify-content-center font-default">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Pizza</a>
@@ -99,7 +89,7 @@
         </div>
         <div class="container-fluid mb-4">
             <div class="row mt-3">
-                <div class="col-xl-6 overflow-auto select-menu pl-0">
+                <div class="col-xl-6 overflow-auto select-menu">
                     <div class="row mx-auto">
                         <div class="col-md-4">
                             <a href="" data-toggle="modal" data-target="#exampleModalMenu">
@@ -171,22 +161,11 @@
                     </div>
                 </div>
                 <div class="col-xl-6">
-                    <div class="row mx-auto mt-2 col-action">
-                        <div class="col-sm-6 pl-0">
-                            <a href="order.html"
-                                class="btn-block bg-white font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-center text-dark btn-action mb-3">
-                                LIST ORDER
-                            </a>
-                        </div>
-                        <div class="col-sm-6 pr-0 last-action">
-                            <a href="create_order.html"
-                                class="btn-block bg-white font-default shadow mr-4 border-0 p-2 pr-3 pl-3 rounded font-weight-bold text-center text-dark btn-action mb-3">
-                                CREATE ORDER
-                            </a>
-                        </div>
-                    </div>
                     <div class="row">
-                        <div class="container-form bg-white w-100 ml-3 mr-3 rounded p-4 shadow">
+                        <div class="container-form bg-white w-100 ml-3 mt-3 mr-3 rounded p-4 shadow">
+                            <div class="col-12 pl-0 mb-4">
+                                <h3 class="font-default font-weight-bold">CREATE ORDER</h3>
+                            </div>
                             <form action="" method="post">
                                 <div class="form-group">
                                     <label for="Nama" class="font-default">Nama Pelanggan</label><br>
@@ -194,21 +173,16 @@
                                         placeholder="Masukan Nama Menu">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Status" class="font-default">Status Menu</label><br>
-                                    <select name="status" id="status" class="w-100">
-                                        <option value="">--- No Meja ----</option>
-                                        <option value="">01</option>
-                                        <option value="">02</option>
-                                        <option value="">03</option>
-                                        <option value="">04</option>
-                                    </select>
+                                    <label for="Alamat" class="font-default">Alamat Tujuan</label><br>
+                                    <input type="text" name="Alamat" id="Alamat" class="w-100"
+                                        placeholder="Masukan Alamat Anda">
                                 </div>
                                 <div class="form-group">
                                     <label for="Deskripsi" class="font-default">Keterangan Order</label><br>
                                     <textarea name="Deskripsi" id="Deskripsi" class="w-100" cols="50"
                                         placeholder="Masukan Keterangan Order"></textarea>
                                 </div>
-                                <button type="button" class="btn btn-block bg-salmon text-white font-default">Save
+                                <button type="button" class="btn btn-block bg-salmon text-white font-default">Order
                                     Menu</button>
                             </form>
                         </div>
