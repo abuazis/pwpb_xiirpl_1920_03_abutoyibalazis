@@ -131,7 +131,7 @@ form textarea {
     }
 }
 
-@media (max-width: 455px) {
+@media (max-width: 730px) {
     .top-bar {
         height: 170px !important;
     }
@@ -148,6 +148,21 @@ form textarea {
     .cari button {
         display: block;
         width: 100%;
+    }
+}
+
+@media (max-width: 463px) {
+    .modal h5 {
+        font-size: 4.4vw;
+    }
+    .modal h4 {
+        font-size: 4.8vw;
+    }
+    .modal h2 {
+        font-size: 7.5vw;
+    }
+    .modal h3 {
+        font-size: 5.5vw;
     }
 }
 

@@ -156,7 +156,7 @@ form textarea {
 }
 
 @media (max-width: 360px) {
-    .fa-pizza-slice {
+    .fa-chart-bar {
         display: none !important;
     }
 }
