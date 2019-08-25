@@ -123,6 +123,14 @@ form textarea {
     border: 4px solid #FF4242;
     border-radius: 7px;
 }
+
+@media (max-width: 439px) {
+    .btn-action {
+        width: 100%;
+        margin-right: 18px !important;
+    }
+}
+
 @media (max-width: 455px) {
     .top-bar {
         height: 170px !important;

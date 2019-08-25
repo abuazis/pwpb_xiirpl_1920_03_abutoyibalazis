@@ -31,7 +31,6 @@ header {
 .nav-link {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 600;
     font-size: 16px;
     line-height: 22px;
     color: white !important;
@@ -162,6 +161,12 @@ header {
     }
 }
 
+@media (max-width: 575px) {
+    footer .col-sm-2 {
+        margin-bottom: 40px;
+    }
+}
+
 @media (max-width: 450px) {
     .logo {
         margin-left: 5px !important;
@@ -172,6 +177,20 @@ header {
     .btn-login .log {
         width: 100%;
         color: black;
+    }
+}
+
+@media (max-width: 435px) {
+    .container-banner p{
+        font-size: 4.7vw;
+    }
+    .log {
+        width: 130px;
+        margin-right: 10px !important;
+    }
+    .reg {
+        width: 130px;
+        margin-left: 10px !important;
     }
 }
 

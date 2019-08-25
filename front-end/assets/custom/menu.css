@@ -127,6 +127,13 @@ form textarea {
     border-radius: 7px;
 }
 
+@media (max-width: 439px) {
+    .btn-action {
+        width: 100%;
+        margin-right: 18px !important;
+    }
+}
+
 @media (max-width: 455px) {
     .top-bar {
         height: 170px !important;
@@ -151,6 +158,23 @@ form textarea {
     .top-bar {
         height: 140px;
     }
+    .col-pad {
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .container-form {
+        margin-left: 0px !important;
+    }
+    .last-action {
+        padding-left: 0px !important;
+        padding-right: 15px !important;
+    }
+    .new-btn {
+        display: block;
+        width: 100%;
+    }
 }
 
 @media (max-width: 659px) {
@@ -168,6 +192,10 @@ form textarea {
     }
     .modal button {
         margin-bottom: 10px;
+    }
+    .price {
+        text-align: center;
+        display: block !important;
     }
     .tab {
         display: block;
@@ -211,6 +239,12 @@ form textarea {
         width: 100%;
     }
     
+}
+
+@media (max-width: 1199px) {
+    .col-action {
+        margin-top: 30px !important;
+    }
 }
 
 @media (max-width: 360px) {
